@@ -1,4 +1,4 @@
-<header class="py-5 px-10 flex flex-row justify-between lg:gap-x-40 lg:justify-normal fixed w-screen border-b border-b-teal-500">
+<header class="py-5 px-3 z-50 md:px-10 bg-gray-800/100 flex flex-row justify-between lg:gap-x-40 lg:justify-normal fixed w-screen border-b border-b-teal-500">
     <a href="{{route('home')}}">
         <img class="rounded-md" src="{{asset('logo.jpeg')}}" width="40px" height="40px" alt="logo" />
     </a>
@@ -19,7 +19,7 @@
             <a class="@yield('blog')  block text-center py-1 px-2 rounded-md hover:bg-teal-600 md:hover:bg-inherit bg-teal-700  md:bg-inherit md:hover:border md:hover:border-teal-700" href="resume"> Blog </a>
         </li>
     </ul>
-    <button id="toggle-dd-menu" class="md:hidden self-end fancy flex flex-row justify-center items-center">
+    <button id="toggle-dd-menu" class="fancy w-10 h-10 p-2 md:hidden self-end fancy flex flex-row justify-center items-center">
         <i id="toggler-icon" class="fa-solid text-2xl  fa-bars"></i>
     </button>
 </header>

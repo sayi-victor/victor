@@ -1,6 +1,6 @@
-<footer class="flex flex-row p-4 justify-center items-center">
+<footer class="flex flex-row border-t md:border-t-0 border-t-gray-700  pt-4 px-4 justify-center items-center">
     <ul class="grid grid-cols-2 w-full md:flex md:flex-row md:justify-center text-gray-300 gap-x-5"> 
-        <li class="text-center border-r border-r-gray-600  px-3">
+        <li class="text-center md:border-r border-r-gray-600  px-3">
             <a class="hover:underline" href="{{env('REPO_URL')}}"> <i class="fa-regular mr-1 fa-star"></i> Star </a>
         </li>
         <li class="text-center md:border-r md:border-r-gray-600 px-3">

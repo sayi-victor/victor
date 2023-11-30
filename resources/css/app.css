@@ -4,13 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    transition: all;
+}
+
 [x-cloak] {
     display: none;
 }
 
 .fancy {
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     background: linear-gradient(145deg, #1c2532, #212c3b);
     box-shadow:  17px 17px 38px #0c1016,
@@ -34,19 +36,3 @@
     box-shadow:  17px 17px 38px #0c1016,
              -17px -17px 38px #324258;
 }
-
-.image-container {
-    /* Set a background color to blend with the image */
-    background-color: white; /* Change 'white' to any color you want to blend with */
-    /* Use the background blend mode to make the white background transparent */
-    background-blend-mode: luminosity; /* Adjust the blend mode to suit your image */
-  }
-  
-  .image-container img {
-    /* Ensure the image covers the entire container */
-    width: 100%;
-    height: auto;
-    /* Ensure the image itself is not affected by the blending */
-    mix-blend-mode: multiply; /* Helps preserve the image colors while blending the background */
-  }
-  
